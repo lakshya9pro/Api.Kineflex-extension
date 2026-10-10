@@ -48,7 +48,8 @@ jobs:
           build-root-directory: "src"
 
       - name: Setup Android SDK
-        uses: android-actions/setup-android@v3.2.2
+        run: |
+          yes | sdkmanager --licenses || true
 
       - name: Access Secrets
         env:

@@ -1,7 +1,7 @@
 rootProject.name = "CloudstreamPlugins"
 
 // This file sets what projects are included. All new projects should get automatically included unless specified in "disabled" variable.
-val disabled = listOf<String>()
+val disabled = listOf<String>("Anichi", "AnimeKai")
 
 fun includeSubprojects(dir: File, basePath: String = "") {
     if (dir.name != "build" && dir.name != "src") {
